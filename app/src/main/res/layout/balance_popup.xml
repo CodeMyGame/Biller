@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:background="#507cb7"
+        android:layout_marginBottom="1dp"
+        android:id="@+id/tableLayout">
+
+        <TableRow>
+            <TextView
+                android:text="Sr.no"
+                android:textColor="#fff"
+                android:id="@+id/sno"
+                android:gravity="center"
+                android:padding="13dip" />
+            <TextView
+                android:text="Particular"
+                android:textColor="#fff"
+                android:id="@+id/particuler"
+                android:gravity="center"
+                android:padding="13dip" />
+            <TextView
+                android:text="Debit"
+                android:id="@+id/debit"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:padding="13dip" />
+            <TextView
+                android:text="Credit"
+                android:id="@+id/credit"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:padding="13dip" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/total"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tableLayout" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#123"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+</RelativeLayout>

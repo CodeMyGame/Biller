@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="200dp">
+
+    <TextView
+        android:id="@+id/textViewTotalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Amount"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        tools:layout_editor_absoluteX="163dp"
+        tools:layout_editor_absoluteY="130dp" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="45dp"
+        android:id="@+id/discount"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/textViewTotalAmount"
+        android:background="@drawable/rounded_corner">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_content_cu" />
+
+        <EditText
+            android:id="@+id/editTextDiscount"
+            android:layout_width="170dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/imageView3"
+            android:layout_toRightOf="@+id/imageView3"
+            android:background="#eef0f2"
+            android:hint="Discount(in %)"
+            android:inputType="number"
+            android:textColorHint="#bebdbd" />
+    </RelativeLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:id="@+id/buttonApply"
+        android:text="apply"
+        android:textColor="#fff"
+        android:background="@drawable/round_btn"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_below="@+id/discount"/>
+</RelativeLayout>

@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Biller</string>
+    <string name="action_settings">Settings</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_biller_home">BillerHomeActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="compose_shortcut_short_label1">New order</string>
+    <string name="compose_shortcut_long_label1">New order</string>
+    <string name="compose_disabled_message1">New order</string>
+    <string name="compose_shortcut_short_label2">Delivery</string>
+    <string name="compose_shortcut_long_label2">Delivery</string>
+    <string name="compose_disabled_message2">Delivery</string>
+    <string name="compose_shortcut_short_label3">Daily report</string>
+    <string name="compose_shortcut_long_label3">Daily report</string>
+    <string name="compose_disabled_message3">Daily report</string>
+    <string name="compose_shortcut_short_label4">My account</string>
+    <string name="compose_shortcut_long_label4">My account</string>
+    <string name="compose_disabled_message4">My account</string>
+</resources>

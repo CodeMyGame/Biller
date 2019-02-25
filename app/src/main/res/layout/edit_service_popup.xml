@@ -1,0 +1,115 @@
+<LinearLayout android:id="@+id/relativeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="320dp"
+    android:layout_marginTop="27dp"
+    android:layout_below="@+id/neworder"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corner">
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_room_service" />
+
+        <EditText
+            android:id="@+id/editTextService"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:inputType="text"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/imageView7"
+            android:layout_toRightOf="@+id/imageView7"
+            android:background="#eef0f2"
+            android:hint="Enter Service Name"
+            android:textColorHint="#bebdbd" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corner">
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_description" />
+
+        <AutoCompleteTextView
+            android:id="@+id/editTextServiceDes"
+            android:layout_width="200dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:inputType="text"
+            android:layout_toEndOf="@+id/imageView1"
+            android:layout_toRightOf="@+id/imageView1"
+            android:background="#eef0f2"
+            android:hint="Enter category"
+            android:textColorHint="#bebdbd" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/rounded_corner">
+
+        <TextView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:text="₹"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerVertical="true"
+            />
+
+        <EditText
+            android:id="@+id/editTextServiceCost"
+            android:layout_width="220dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:background="#eef0f2"
+            android:inputType="number"
+            android:hint="Enter Service Cost"
+            android:textColorHint="#bebdbd" />
+    </RelativeLayout>
+    <Button
+        android:id="@+id/buttonedit"
+        android:layout_width="200dp"
+        android:layout_height="35dp"
+        android:onClick="addService"
+        android:text="Edit"
+        android:layout_marginBottom="30dp"
+        android:layout_gravity="center_horizontal"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/round_btn" />
+
+</LinearLayout>

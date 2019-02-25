@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:id="@+id/address"
+        android:background="@drawable/rounded_corner">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/textViewFirmAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:text="Loading....."
+            android:textStyle="bold"
+            android:textColor="#123"
+            android:layout_toEndOf="@+id/imageView2"
+            android:layout_toRightOf="@+id/imageView2"
+            android:background="#eef0f2" />
+    </RelativeLayout>
+    <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="1"
+        android:background="@color/colorPrimary"
+        android:layout_below="@+id/address"
+        android:id="@+id/tableLayout">
+
+        <TableRow
+            android:layout_marginBottom="1dp">
+            <TextView
+                android:text="Sr.no"
+                android:textColor="#fff"
+                android:textStyle="bold"
+                android:id="@+id/sno"
+                android:gravity="center"
+                android:padding="13dip" />
+            <TextView
+                android:text="Service"
+                android:textStyle="bold"
+                android:textColor="#fff"
+                android:id="@+id/particuler"
+                android:gravity="center"
+                android:padding="13dip" />
+
+            <TextView
+                android:text="Count"
+                android:id="@+id/amount"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#fff"
+                android:padding="13dip" />
+        </TableRow>
+
+
+    </TableLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tableLayout" />
+   <ProgressBar
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:id="@+id/progressBar"
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"/>
+</RelativeLayout>

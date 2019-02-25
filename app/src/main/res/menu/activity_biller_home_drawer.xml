@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_neworder"
+            android:icon="@drawable/ic_fiber_new_black_24dp"
+            android:title="New order" />
+        <item
+            android:id="@+id/nav_myaccount"
+            android:icon="@drawable/ic_account"
+            android:title="My account" />
+        <item
+            android:id="@+id/nav_delivery"
+            android:icon="@drawable/ic_shopping_cart_black_24dp"
+            android:title="Delivery" />
+        <item
+            android:id="@+id/nav_report"
+            android:icon="@drawable/ic_assignment_black_24dp"
+            android:title="Daily Report" />
+        <item
+            android:id="@+id/nav_subscri"
+            android:icon="@drawable/ic_extension_black_24dp"
+            android:title="Extend subscription" />
+        <item
+            android:id="@+id/nav_service"
+            android:icon="@drawable/ic_room_service_black_24dp"
+            android:title="Edit services" />
+        <item
+            android:id="@+id/nav_perKg"
+            android:icon="@drawable/ic_edit_black_24dp"
+            android:title="Edit per kg price" />
+
+    </group>
+
+
+
+</menu>

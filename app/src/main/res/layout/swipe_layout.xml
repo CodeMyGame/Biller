@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.chauthai.swipereveallayout.SwipeRevealLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:dragEdge="right"
+    app:mode="normal">
+
+    <FrameLayout
+        android:id="@+id/delete_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:orientation="horizontal"
+            android:background="#bc0407"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:id="@+id/deleteItem"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_delete"
+                    android:id="@+id/delete"
+                   />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="80dp"
+                android:gravity="center"
+                android:id="@+id/editItem"
+                android:background="#139105"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_edit"
+                    android:id="@+id/edit"
+               />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/front_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/white">
+
+        <android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:id="@+id/view_foreground"
+            android:layout_marginBottom="1dp"
+            android:elevation="20dp">
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+
+                android:layout_height="80dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/TextViewID"
+                    android:layout_width="55dp"
+                    android:layout_height="55dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/circle_back"
+                    android:gravity="center"
+                    android:text="T"
+                    android:textColor="#ffffff"
+                    android:textSize="40dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewTitle"
+                    android:layout_width="150dp"
+                    android:layout_height="30dp"
+                    android:layout_alignTop="@+id/TextViewID"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginStart="24dp"
+                    android:layout_toRightOf="@+id/TextViewID"
+                    android:text="Washing"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textViewDes"
+                    android:textStyle="bold"
+                    android:layout_width="180dp"
+                    android:layout_height="wrap_content"
+                    android:text="fgxvcvx"
+                    android:textSize="15dp"
+                    android:layout_alignBaseline="@+id/textView5"
+                    android:layout_alignBottom="@+id/textView5"
+                    android:layout_alignLeft="@+id/textViewTitle"
+                    android:layout_alignStart="@+id/textViewTitle" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₹"
+                    android:textColor="#0c3e66"
+                    android:textSize="30dp"
+                    android:textStyle="bold"
+                    android:layout_alignBaseline="@+id/textViewCost"
+                    android:layout_alignBottom="@+id/textViewCost"
+                    android:layout_toLeftOf="@+id/textViewCost"
+                    android:layout_toStartOf="@+id/textViewCost"
+                    android:id="@+id/textView5" />
+
+                <TextView
+                    android:id="@+id/textViewCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginEnd="14dp"
+                    android:layout_marginRight="14dp"
+                    android:text="500"
+                    android:textColor="#0c3e66"
+                    android:textSize="30dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+    </FrameLayout>
+</com.chauthai.swipereveallayout.SwipeRevealLayout>

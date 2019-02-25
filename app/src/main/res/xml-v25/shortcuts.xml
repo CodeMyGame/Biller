@@ -1,0 +1,66 @@
+<shortcuts xmlns:android="http://schemas.android.com/apk/res/android">
+    <shortcut
+        android:shortcutId="compose"
+        android:enabled="true"
+        android:icon="@drawable/u1"
+        android:shortcutShortLabel="@string/compose_shortcut_short_label1"
+        android:shortcutLongLabel="@string/compose_shortcut_long_label1"
+        android:shortcutDisabledMessage="@string/compose_disabled_message1">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.biller.biller"
+            android:targetClass="com.biller.biller.activities.NewOrderActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="compose1"
+        android:enabled="true"
+        android:icon="@drawable/u2"
+        android:shortcutShortLabel="@string/compose_shortcut_short_label2"
+        android:shortcutLongLabel="@string/compose_shortcut_long_label2"
+        android:shortcutDisabledMessage="@string/compose_disabled_message2">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.biller.biller"
+            android:targetClass="com.biller.biller.activities.DeliveryActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="compose2"
+        android:enabled="true"
+        android:icon="@drawable/u3"
+        android:shortcutShortLabel="@string/compose_shortcut_short_label3"
+        android:shortcutLongLabel="@string/compose_shortcut_long_label3"
+        android:shortcutDisabledMessage="@string/compose_disabled_message3">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.biller.biller"
+            android:targetClass="com.biller.biller.activities.MyOrderActivity" />
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+    <shortcut
+        android:shortcutId="compose3"
+        android:enabled="true"
+        android:icon="@drawable/u4"
+        android:shortcutShortLabel="@string/compose_shortcut_short_label4"
+        android:shortcutLongLabel="@string/compose_shortcut_long_label4"
+        android:shortcutDisabledMessage="@string/compose_disabled_message4">
+        <intent
+            android:action="android.intent.action.VIEW"
+            android:targetPackage="com.biller.biller"
+            android:targetClass="com.biller.biller.activities.MyAccountActivity"/>
+        <!-- If your shortcut is associated with multiple intents, include them
+             here. The last intent in the list determines what the user sees when
+             they launch this shortcut. -->
+        <categories android:name="android.shortcut.conversation" />
+    </shortcut>
+</shortcuts>

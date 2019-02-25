@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <Switch
+        android:id="@+id/switchChoice"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="Quantity" />
+    <Spinner
+        android:id="@+id/spinner"
+        android:visibility="gone"
+        android:layout_margin="20dp"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/switchChoice"
+
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="20dp"
+        android:hint="Total kg's"
+        android:visibility="gone"
+        android:inputType="numberDecimal"
+        android:id="@+id/editTextTotalKgs"
+        android:layout_below="@+id/spinner" />
+
+    <TextView
+        android:id="@+id/textViewTotalBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Total bill amount = ₹ 100"
+        android:textColor="#123"
+        android:visibility="gone"
+        android:textSize="20dp"
+        android:layout_below="@+id/editTextTotalKgs"
+        android:textStyle="bold" />
+    <Button
+        android:layout_width="200dp"
+        android:text="Confirm"
+        android:visibility="gone"
+        android:textColor="#fff"
+        android:layout_marginTop="15dp"
+        android:id="@+id/buttonConfirm"
+        android:layout_below="@id/textViewTotalBill"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/round_btn"
+        android:layout_marginBottom="40dp"
+        android:layout_height="30dp" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewTotalItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:visibility="gone"
+        android:text="" />
+
+</RelativeLayout>

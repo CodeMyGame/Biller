@@ -1,0 +1,37 @@
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:stretchColumns="1"
+    android:background="@color/colorPrimaryDark"
+    android:layout_marginBottom="1dp"
+    android:id="@+id/tableLayout">
+
+    <TableRow>
+        <TextView
+            android:text="Sr.no"
+            android:textColor="#fff"
+            android:id="@+id/sno"
+            android:gravity="center"
+            android:padding="13dip" />
+        <TextView
+            android:text="Invoicdfgfgd"
+            android:textColor="#fff"
+            android:id="@+id/particuler"
+            android:gravity="center"
+            android:padding="13dip" />
+        <TextView
+            android:text="Amount"
+            android:id="@+id/debit"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:padding="13dip" />
+        <TextView
+            android:text="Amount"
+            android:id="@+id/credit"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:padding="13dip" />
+    </TableRow>
+
+
+</TableLayout>
